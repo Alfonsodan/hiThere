@@ -11,8 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var textField: UILabel!
+    var greeting = "Hi there "
     @IBAction func buttonPressed(_ sender: Any) {
-        textField.text = nameField.text
+        textField.text = greeting + nameField.text!
     }
     
     override func viewDidLoad() {
